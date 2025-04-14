@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  button{
+    @apply rounded-lg font-semibold;
+  }
+  h1,h6,h2,h4 {
+    font-family: 'Comfortaa', serif;
+  }
+  h1,h2, h3,h4,h5,h6{
+    @apply text-deepSapphire-base;
+  }
+  p{
+    font-family: Rubik, serif;
+  }
+
+}
+
+
+@layer components {
+  
+  a{
+    transition-property: all !important;
+    transition-duration: 300ms !important;
+  }
+  a:hover {
+    @apply -translate-y-0.5 underline;
+  }
+  button {
+    transition-property: all !important;
+    transition-duration: 300ms !important;
+
+  }
+  button:hover {
+    @apply -translate-y-0.5;
+  }
+  /* Override hover styles for primary buttons */
+  button.bg-background-primary:hover {
+    @apply bg-background-primaryHover shadow-xl;
+  }
+  button.text-text-primary:hover {
+    @apply text-text-primaryHover;
+    
+  }
+  button.border-border-primary:hover {
+    @apply  border-border-primaryHover shadow-xl;
+  }
+  /* Override hover styles for secondary buttons */
+  button.bg-background-secondary:hover {
+    @apply bg-background-secondaryHover shadow-xl;
+  } 
+  button.bg-background-alternative:hover {
+    @apply bg-background-alternativeHover shadow-xl;
+  }
+  button.text-text-secondary:hover {
+    @apply text-text-secondaryHover shadow-xl;
+  }
+  button.border-border-secondary:hover {
+    @apply  border-border-secondaryHover shadow-xl; 
+  }
+
+
+
+}
