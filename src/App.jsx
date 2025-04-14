@@ -2,7 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import Home from './home/index'
 import About from './about-us/index'
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import { Footer1 } from "./nav-footer/Footer1";
 import { Navbar3 } from "./nav-footer/Navbar3";
 import ScrollToTop from "./nav-footer/ScrollToTop.jsx";
